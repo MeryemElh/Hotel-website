@@ -1,0 +1,992 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="" />
+  <link type="image/x-icon" href="/_img/logo_hotel_aicha2.png" rel="shortcut icon" />
+  <meta name="google-site-verification" content="GiaXPAb_v7_ezJQQIflpb_lIj9gqGW70TWraJlCAQdw" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script type="text/javascript">
+    function pload() {
+      var m = this;
+      m.q = [];
+      m.a = function (f) {
+        m.i(f);
+      };
+      m.i = function (f) {
+        m.q.push(f);
+      };
+      m.f = function () {
+        var f;
+        while ((f = m.q.shift())) f();
+        m.r();
+      };
+      m.r = function () {
+        m.i = function (f) {
+          f();
+        };
+      };
+    }
+    pnl = new pload();
+    $$ = pnl.a;
+    pnla = new pload();
+    $$$ = pnla.a;
+  </script>
+  <title>
+    Template Hotel
+  </title>
+  <meta name="description" content="description hotel" />
+  <meta http-equiv="content-language" content="fr" />
+
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <link rel="shortcut icon" href="https://HotelAicha.com/favicon.ico" />
+  <link rel="icon" href="https://HotelAicha.com/favicon.ico" />
+  <script type="text/javascript">
+    (function () {
+      var d = document;
+      var s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'assets/scripts.js';
+      (
+        d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-TZ6NFVW" height="0" width="0"
+      style="display: none; visibility: hidden;"></iframe>
+  </noscript>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TZ6NFVW');
+  </script>
+  <!--[if lt IE 9]>
+      <script src="/_js/z_load//html5shiv.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alice|Josefin+Sans:600" rel="stylesheet" />
+  <style>
+    @supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
+      .selectfield::after {
+        display: block
+      }
+
+      .selectfield select {
+        padding-right: 28px;
+        background: none;
+        border: 1px solid transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+      }
+
+      .selectfield select:focus {
+        border-color: transparent
+      }
+
+      .field input,
+      .field input:hover,
+      .field input:focus,
+      .field input[type="text"],
+      .field input[type="text"]:hover,
+      .field input[type="text"]:focus,
+      .field textarea,
+      .field textarea:hover,
+      .field textarea:focus {
+        background: none;
+        border: 1px solid transparent;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+      }
+  </style>
+</head>
+
+<body id="home" class="fr" onLoad="window._pulsarDocLoad=true">
+  <style type="text/css">
+    .moment-notice {
+      position: fixed;
+      overflow: hidden;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      box-sizing: border-box;
+      width: 100%;
+      z-index: 99999;
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translate3d(0, -400px, 0);
+      -moz-transform: translate3d(0, -400px, 0);
+      -ms-transform: translate3d(0, -400px, 0);
+      -o-transform: translate3d(0, -400px, 0);
+      transform: translate3d(0, -400px, 0);
+      -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .moment-notice.show {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .mn-wrap {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: calc(100% - 60px);
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .mn-col {
+      display: block;
+      font-family: 'Arial', sans-serif !important;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .mn-col.padding {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .mn-wrap svg {
+      display: block;
+      width: 42px;
+      height: 42px;
+      fill: white;
+    }
+
+    .mn-headline {
+      position: relative;
+      top: -5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .mn-text {
+      line-height: 1.4;
+    }
+
+    a.expand-content {
+      color: #fff;
+      font-size: 14px;
+      padding-bottom: 1px;
+      border-bottom: 1px solid #fff;
+    }
+
+    a.expand-content>.show-more:after,
+    a.expand-content>.show-less:after {
+      display: none;
+    }
+
+    #mn-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: block;
+      width: 19px;
+      height: 19px;
+      background: url('../../novablink.com/commons/widget_notice_banner/img/close.png') left top no-repeat;
+      background-size: 19px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      .moment-notice {
+        z-index: 9999;
+      }
+
+      .mn-wrap {
+        width: calc(100% - 80px);
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .mn-col.padding {
+        padding-left: 0px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    $$(function () {
+      var notice = $('.moment-notice'),
+        expand = $('.expand-content'),
+        close = $('#mn-close');
+      notice.delay(1500).queue(function () {
+        $(this).addClass('show');
+      });
+      close.click(function (event) {
+        event.preventDefault();
+        $('.moment-notice').removeClass('show');
+      });
+      expand.click(function (event) {
+        var obj = $(this).closest('.mn-wrap');
+        event.preventDefault();
+        obj.find('.extra-content').slideToggle(100);
+        obj.find('.show-more').toggleClass('noDisplay');
+        obj.find('.show-less').toggleClass('yesAppear');
+      });
+      $('.mn-col').each(function () {
+        if ($.trim($(this).find('.extra-content').text()) == '') {
+          $(this).find('.expand-content').hide();
+        }
+      });
+    });
+  </script>
+  <header id="header" class="header-main">
+    <div class="wrapper">
+      <a href="#" class="btn btn-nav" data-aos="fade-right" data-aos-offset="0" data-aos-duration="500"
+        data-aos-delay="0">
+        <div class="menu-icon">
+          <span></span> <span></span> <span></span>
+        </div>
+        MENU
+      </a><a class="back-link" href="#" data-aos="fade" data-aos-offset="0" data-aos-duration="500"
+        data-aos-delay="0">RETOUR À LA PAGE DE PRÉSENTATION</a><a class="">
+        <img class="logo-desktop" style="margin-top:300px;" src="/_img/logo_hotel_aicha2.png" alt="Hotel aicha"
+          data-aos="fade-down" data-aos-offset="0" data-aos-duration="500" data-aos-delay="0" />
+        <img class="logo-mobile" style=" max-height:15%;max-width:15%;" src="/_img/logo hotel aicha.png"
+          alt="Hotel aicha" />
+      </a>
+      <a href="https://reservation-hotelaicha.000webhostapp.com/" target="_blank" class="btn btn-book booklink"
+        data-aos="fade-left" data-aos-offset="0" data-aos-duration="500" data-aos-delay="0">RÉSERVEZ</a>
+    </div>
+  </header>
+  <div class="sidebar-nav">
+    <div class="inner">
+      <a href="javascript:void(0)" class="sidebar-nav-close">
+        <span></span> <span></span>
+      </a>
+      <ul class="menu">
+        <li class="drop-me">
+          <a class="rooms drop-btn" href="javascript:void(0)" novaref="4334715" novatype="txt"></a>
+        </li>
+        <li>
+          <a class="offers" href="/index.html" novaref="4334722" novatype="txt">L'Hotel</a>
+        <li>
+          <a class="restaurant-and-bar" href="/prestations.html" novaref="4334729" novatype="txt">Nos prestations</a>
+        </li>
+        <li>
+          <a class="restaurant-and-bar" href="/Evenement.html" novaref="4334729" novatype="txt">Evénements</a>
+        </li>
+        <li>
+          <a class="spa-and-wellness" href="#" novaref="4334730" novatype="txt">Réservation en ligne</a>
+        </li>
+        <li>
+          <a class="meetings-and-events" href="/contact.html" novaref="4334731" novatype="txt">Contactez-nous</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="second-header">
+    <div class="wrapper">
+      <a href="#" class="btn btn-nav">
+        <div class="menu-icon">
+          <span></span> <span></span> <span></span>
+        </div>
+        MENU
+      </a>
+      <a class="">
+        <img class="second-logo" src="/_img/logo hotel aicha 2.png" width="180" height="80" alt="Hotel aicha" />
+      </a>
+      <a href="https://reservation-hotelaicha.000webhostapp.com/" target="_blank"
+        class="btn btn-book booklink">RÉSERVEZ</a>
+    </div>
+  </div>
+  <section class="container">
+    <div id="slideshow">
+      <div class="myslider top-slider">
+        <div id="jsloader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div editableslider="1" minwidth="2200" minheight="1200">
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalfirst="1"
+              src="_novaimg/4523113-1398213_0_0_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4523113" width="2200"
+              height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="0"
+              asrc="/_novaimg/4447901-1379210_0_7_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4447901"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="1"
+              asrc="/_novaimg/4523111-1398211_0_269_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4523111"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="2"
+              asrc="/_novaimg/4447899-1379208_0_0_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4447899"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="3"
+              asrc="/_novaimg/4523112-1398212_0_121_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4523112"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="4"
+              asrc="/_novaimg/4447900-1379209_0_92_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4447900"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="5"
+              asrc="/_novaimg/4337777-1350111_0_536_4220_2302_2200_1200.rc.jpg" alt="Hotel aicha Hotel - Spa"
+              galitemid="4337777" width="4220" height="2302" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="6"
+              asrc="/_novaimg/4447902-1379211_0_85_2200_1199_2200_1200.rc.jpg" alt="image" galitemid="4447902"
+              width="2200" height="1199" />
+          </div>
+          <div class="novaslider hideonload">
+            <img class="novaslider_bgimage" novagal="4523113" novagalchild="7"
+              asrc="/_novaimg/4418067-1371742_1233_1480_2199_1198_2200_1200.rc.jpg" alt="image" galitemid="4418067"
+              width="2199" height="1198" />
+          </div>
+        </div>
+        <div class="novahtmlslider_controls">
+          <div class="controlsWrap">
+            <a class="controlleft" data-aos="fade-right" data-aos-offset="0" data-aos-duration="500"
+              data-aos-delay="500"></a>
+            <a class="controlright" data-aos="fade-left" data-aos-offset="0" data-aos-duration="500"
+              data-aos-delay="500"></a>
+          </div>
+        </div>
+      </div>
+      <div class="usp cycle-slideshow" data-cycle-fx="fade" data-cycle-delay="1500" data-cycle-speed="1000"
+        data-cycle-timeout="3500" data-cycle-easing="jswing" data-cycle-ease-out="jswing" data-cycle-slides=".usp-slide"
+        data-cycle-auto-height="container" data-aos="fade" data-aos-offset="0" data-aos-duration="800"
+        data-aos-delay="500">
+        <div class="nova_editablelisting" novamasterid="4333218" novamastertitle=""></div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523094" novatype="txt">
+              Pour vous ressourcer, vous tonifier ou vous évader, embarquez pour un
+              voyage au coeur d'une des destinations les plus vibrantes et
+              spirituelles de l'Atlantique.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523091" novatype="txt">
+              Réservez 4 nuits consécutives, la dernière vous est offerte.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523087" novatype="txt">
+              Notre établissement se trouve en effet à
+              proximité des sites touristiques de la Medina.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523084" novatype="txt">
+              Séjournez à l'Hotel aicha pour goûter le meilleur de la gastronomie
+              marocaine très connue et raffinée!
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523080" novatype="txt">
+              Accordez-vous une petite pause pour bien vous resoucer.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4523062" novatype="txt">
+              Evadez vous le temps d'un week dans notre Hotel et trouvez toutes vos
+              passions au cœur de nos préoccupations.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4337826" novatype="txt">
+              L’hôtel Aïcha vous promet un séjour
+              alliant détente et découvertes.
+            </h1>
+          </div>
+        </div>
+        <div class="usp-slide">
+          <div class="inner">
+            <h1 novaref="4334736" novatype="txt">
+              Découvrez notre Spa et prennez du temps pour vous
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container container-padding">
+    <div class="wrapper">
+      <article class="post post-center">
+        <h1 class="page-title" novaref="4337806" novatype="txt">
+          Déscription de l'hotel - Déscription de l'hotel
+          Déscription de l'hotel Déscription de l'hotel
+          Casablanca.
+        </h1>
+      </article>
+    </div>
+  </section>
+  <section class="section-features">
+    <div class="section-features">
+      <div class="containers">
+        <header class="section__head">
+          <h1 class="h1 title1 title--center" style="float: none;">
+            MESURES SANITAIRES DE L'HOTEL
+            <br>
+            <h2 class="h21 section__subtitle" style="margin-top: -1em; float:none;">_________</h2>
+          </h1>
+
+          <h2 class="h21 section__subtitle" style="float: none;">
+            Description Description Description Description Description Description Description Description <br>
+          </h2>
+        </header>
+
+        <div class="section__body">
+          <ul class="list-features align-items-start">
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363acf49-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363acf49-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363acf49-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493688c608-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493688c608-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493688c608-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363b859b-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363b859b-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135395_5f049363b859b-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936572cfe-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936572cfe-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936572cfe-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936569c68-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936569c68-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135397_5f04936569c68-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135398_5f049366eb578-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135398_5f049366eb578-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135398_5f049366eb578-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135399_5f04936714a1c-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135399_5f04936714a1c-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135399_5f04936714a1c-thumb.png">
+              </span>
+
+            </li>
+            <li>
+              <span>
+                <img class=" lazyloaded"
+                  data-src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493686661f-thumb.png"
+                  alt="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493686661f-thumb.png"
+                  src="https://cdn.galaxy.tf/uploads/3s/cms_image/001/594/135/1594135400_5f0493686661f-thumb.png">
+              </span>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="mobile-nav">
+  </section>
+  <section class="container container-bg-first">
+    <div class="wrapper visible">
+      <article class="card rt" data-aos="slide-left" data-aos-offset="0" data-aos-duration="500" data-aos-delay="0">
+        <h2 class="underline" novaref="4337808" novatype="txt">
+          En visite touristique à Casablanca ?
+        </h2>
+        <div class="p-wrap">
+          <p novaref="4337809" novatype="txt">
+            L’Hôtel Aïcha à Casablanca est le lieu idéal pour partir à la découverte
+            de la Ville Blanche, Déposez vos bagages dans ce bâtiment historique, et
+            laissez le ravissant centre-ville, ses rues piétonnes, cafés-brasseries,
+            cafés et vielles échoppes vous emporter.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="container">
+    <ul class="thumbs">
+      <li data-aos="slide-up" data-aos-offset="0" data-aos-duration="800" data-aos-delay="0">
+        <a href="/offers.html">
+          <div class="img-wrap">
+            <img novaref="4337820" novatype="img" alt="Hotel aicha Hotel - Spa"
+              src="_novaimg/4337820-1379415_273_0_1180_1533_1000_1300.jpg" width="1000" height="1300" />
+          </div>
+          <div class="caption">
+            <h2 class="centered" novaref="4337811" novatype="txt">
+              Familly Offer
+            </h2>
+            <br />
+            <span class="centered" novaref="4337812" novatype="txt">Découvrir</span>
+          </div>
+        </a>
+      </li>
+      <li data-aos="slide-up" data-aos-offset="0" data-aos-duration="800" data-aos-delay="0">
+        <a href="/offers.html">
+          <div class="img-wrap">
+            <img novaref="4337821" novatype="img" alt="Hotel aicha Hotel - Spa"
+              src="_novaimg/4337821-1379422_0_0_2200_2859_1000_1300.jpg" width="1000" height="1300" />
+          </div>
+          <div class="caption">
+            <h2 class="centered" novaref="4337813" novatype="txt">
+              Spreed Love Offer
+            </h2>
+            <br />
+            <span class="centered" novaref="4337814" novatype="txt">Découvrir</span>
+          </div>
+        </a>
+      </li>
+      <li data-aos="slide-up" data-aos-offset="0" data-aos-duration="800" data-aos-delay="0">
+        <a href="/offers.html">
+          <div class="img-wrap">
+            <img novaref="4337822" novatype="img" alt="Hotel aicha Hotel"
+              src="_novaimg/4337822-1379421_351_0_1103_1435_1000_1300.jpg" width="1000" height="1300" />
+          </div>
+          <div class="caption">
+            <h2 class="centered" novaref="4337815" novatype="txt">
+              Week-end Offer
+            </h2>
+            <br />
+            <span class="centered" novaref="4337816" novatype="txt">Découvrir</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="container container-bg-second">
+    <div class="wrapper visible">
+      <article class="card lt" data-aos="slide-right" data-aos-offset="0" data-aos-duration="500" data-aos-delay="0">
+        <h2 class="underline" novaref="4337817" novatype="txt">
+          En voyage d’affaires sur Casablanca ?
+        </h2>
+        <div class="p-wrap">
+          <p novaref="4337818" novatype="txt">
+            L’Hôtel Aïcha vous offre un accès WIFI gratuit dans toutes les chambres,
+            avec une connexion internet à haut débit, une salle de réunion
+            permettant d’accueillir jusqu’à 20 personnes, une réception multilingue
+            qui vous assistera pour rendre votre séjour à la fois productif et
+            agréable.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="container container-padding last">
+    <div class="wrapper">
+      <h2 class="centered small" novaref="4334740" novatype="txt">
+        Suivez-nous sur Instagram
+      </h2>
+      <a href="https://www.instagram.com/HotelAicha/" target="_blank" class="subtitle" href="#" novaref="4334741"
+        novatype="txt">@HotelAicha</a>
+      <ul class="instagram-thumbs">
+        <li data-aos="slide-up" data-aos-offset="200" data-aos-duration="600" data-aos-delay="0">
+          <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+            <div class="img-wrap">
+              <img novaref="4334748" novatype="img" alt="Hotel aicha Hotel - D&eacute;tails"
+                src="_novaimg/4334748-1350140_4_193_692_692_600_600.jpg" width="600" height="600" />
+            </div>
+          </a>
+        </li>
+        <li data-aos="slide-up" data-aos-offset="200" data-aos-duration="600" data-aos-delay="200">
+          <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+            <div class="img-wrap">
+              <img novaref="4334749" novatype="img" alt="Hotel aicha Hotel - D&eacute;tails"
+                src="_novaimg/4334749-1350556_16_327_601_601_600_600.jpg" width="600" height="600" />
+            </div>
+          </a>
+        </li>
+        <li data-aos="slide-up" data-aos-offset="200" data-aos-duration="600" data-aos-delay="400">
+          <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+            <div class="img-wrap">
+              <img novaref="4334750" novatype="img" alt="Hotel aicha Hotel - D&eacute;tails"
+                src="_novaimg/4334750-1350557_153_0_927_927_600_600.jpg" width="600" height="600" />
+            </div>
+          </a>
+        </li>
+        <li data-aos="slide-up" data-aos-offset="200" data-aos-duration="600" data-aos-delay="600">
+          <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+            <div class="img-wrap">
+              <img novaref="4334751" novatype="img" alt="Hotel aicha Hotel - D&eacute;tails"
+                src="_novaimg/4334751-1357939_320_67_633_633_600_600.jpg" width="600" height="600" />
+            </div>
+          </a>
+        </li>
+        <li data-aos="slide-up" data-aos-offset="200" data-aos-duration="600" data-aos-delay="800">
+          <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+            <div class="img-wrap">
+              <img novaref="4334752" novatype="img" alt=" Hotel aicha- D&eacute;tails"
+                src="_novaimg/4334752-1357953_717_69_683_683_600_600.jpg" width="600" height="600" />
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer-main">
+    <section class="footer-top" style="padding-bottom: 0px;">
+      <div class="wrapper">
+        <ul class="footer-links">
+          <li novaref="4334742" novatype="txt">
+            adresse adresse adresse
+          </li>
+          <li novaref="4334743" novatype="txt">20000, Casablanca – Maroc</li>
+          <li class="divider">|</li>
+          <li>
+            Tél :
+            <span novaref="4334744" novatype="txt" novaint="1">+212 (0)5 22 22 22 22</span>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#" novaref="4334745" novatype="txt" novaint="1">reservations@HotelAicha.com</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="#" target="_blank">
+              <span class="icon-share"><span class="iconify" data-icon="ion:share-social"
+                  data-inline="false"></span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <span class="icon-facebook"><span class="iconify" data-icon="typcn:social-facebook"
+                  data-inline="false"></span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/HotelAicha" target="_blank">
+              <span class="icon-twitter"><span class="iconify" data-icon="typcn:social-twitter"
+                  data-inline="false"></span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/HotelAicha/" target="_blank">
+              <span class="icon-pinterest"><span class="iconify" data-icon="simple-line-icons:social-pinterest"
+                  data-inline="false"></span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/HotelAicha/" target="_blank">
+              <span class="icon-instagram"><span class="iconify" data-icon="typcn:social-instagram"
+                  data-inline="false"></span></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-links secondary top">
+          <li novaref="4334746" novatype="txt">Hotel aicha</li>
+          <li class="divider">|</li>
+          <li><a href="#">Mentions Légales</a></li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#">Politique de confidentialité</a>
+          </li>
+        </ul>
+        <ul class="footer-links secondary">
+          <li><img href="#" src="/_img/Logo Le Cabinet Du Digital_v1 (1).png" height="100px" width="220px"
+              alt="logo cabinet"></li>
+          </br>
+          <li novaref="4334746" style="margin-left:1em; text-align: center;">
+            Création et gestion de site internet. Tous
+            droits réservés</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+  <div class="sidebar-overlay"> </div>
+  <div id="sidebar-navigation" class="sidebar-navigation">
+    <nav>
+      <ul id="sidebar-menu" class="sidebar-menu">
+        <li>
+          <a class="offers" href="/index.html" novaref=4334722 novatype=txt>L'Hotel</a>
+        </li>
+        <li> <a class="offers" href="/prestations.html" novaref=4334722 novatype=txt>Nos préstations</a></li>
+        <li> <a class="restaurant-and-bar" href="/Evenement.html" novaref=4334729 novatype=txt>Evénements</a></li>
+        <li> <a class="spa-and-wellness" href="#" novaref=4334730 novatype=txt>Réservation en ligne</a></li>
+        <li> <a class="meetings-and-events" href="/contact.html" novaref=4334731 novatype=txt>Contactez-nous</a></li>
+      </ul>
+    </nav>
+    <a href="https://reservation-hotelaicha.000webhostapp.com/" target="_blank"
+      class="sidebar-btn booklink">RÉSERVEZ</a>
+  </div>
+  <div class="menu-btn">
+    <div class="menu-icon"><span></span> <span></span> <span></span></div>
+  </div>
+  <section class="footer-bar">
+    <div class="inner">
+      <div class="footer-cta">
+        <span class="caption">Réserver en toute confiance</span>
+        <span class="subcaption">Description</span>
+      </div>
+      <a href="https://reservation-hotelaicha.000webhostapp.com/" target="_blank"
+        class="btn footer-btn booklink">RÉSERVEZ</a>
+    </div>
+  </section>
+  <script type="text/javascript">
+    function novajsloader(o) {
+      var me = this;
+      me.o = o;
+      me.d = document;
+      me.main = me.d.getElementById(me.o.id);
+      if (!me.main) return;
+      me.speed = me.o.speed;
+      me.items = me.main.children;
+      me.count = me.items.length;
+      me.current = 0;
+      me.so = function (o, n) {
+        try {
+          var s = o.style;
+          s.opacity = n;
+          s.MozOpacity = n;
+          s.KhtmlOpacity = n;
+          s.filter = 'alpha(opacity=' + n * 100 + ')';
+        } catch (e) {}
+      };
+
+      function ps() {}
+      me.fi = function (o, ms, onOff, cb) {
+        var item = new ps();
+        item.o = o;
+        item.onOff = onOff;
+        if (onOff == 1) {
+          item.opa = 0;
+        } else {
+          item.opa = 1;
+        }
+        item.start = new Date();
+        item.cb = cb;
+        item.duration = ms;
+        item.run = function () {
+          var elapsed = new Date() - item.start;
+          var p = elapsed / item.duration;
+          p = p > 1 ? 1 : p;
+          if (p >= 1) {
+            clearInterval(item.interval);
+            me.so(item.o, item.onOff);
+            item.cb();
+            return;
+          }
+          var nextOpa = (-Math.cos(p * Math.PI) / 2 + 0.5) * 1 + 0;
+          if (item.onOff == 0) nextOpa = 1 - nextOpa;
+          me.so(item.o, nextOpa);
+        };
+        item.interval = setInterval(item.run, 4);
+      };
+      me.nextItem = function () {
+        me.fi(me.items[me.current], me.speed, 0, function () {});
+        me.current++;
+        if (me.current > me.count - 1) me.current = 0;
+        me.fi(me.items[me.current], me.speed, 1, me.nextItem);
+      };
+      me.fi(me.items[me.current], me.speed, 1, me.nextItem);
+    }
+    new novajsloader({
+      id: 'jsloader',
+      speed: 600
+    });
+  </script>
+  <script type="text/javascript">
+    $$(function () {
+      var conf = {
+        option: 'fade',
+        orientation: 'fromRight',
+        duration: [1500, 1500],
+        easing: ['jswing', 'jswing'],
+        firstdisplay_option: 'fade',
+        firstdisplay_orientation: 'fromLeft',
+        firstdisplay_duration: 1500,
+        firstdisplay_easing: 'jswing',
+        useviewportheight: false,
+        margin: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0
+        },
+        timer: 3000,
+      };
+      var config = new novahtmlslider_easyconfig(conf);
+      conf.firstdisplay_option = 'fade';
+      conf.option = 'realreveal';
+      conf.orientation = 'fromRight';
+      var config_InternetExplorer = new novahtmlslider_easyconfig(conf);
+      new novahtmlslider(
+        $('.top-slider'),
+        config.output,
+        config_InternetExplorer.output
+      );
+    });
+  </script>
+  <script type="text/javascript">
+    $$(function () {
+      $('.mini-be')
+        .delay(1750)
+        .queue(function () {
+          $(this).toggleClass('open');
+          $(this).dequeue();
+        });
+    });
+  </script>
+  <script>
+    (function () {
+      var params = {
+        hpid: '26607',
+        pt: 'HOME_PAGE'
+      };
+      var paramsArr = [];
+      for (key in params) {
+        paramsArr.push(key + '=' + encodeURIComponent(params[key]));
+      }
+      var pl = document.createElement('script');
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src =
+        'https://beacon.sojern.com/pixel/cp/11?f_v=cp_v1_js&p_v=1&' +
+        paramsArr.join('&');
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(pl);
+    })();
+  </script>
+  <a href="javascript:void(0)" title="novaadmin" onClick="novacmsadm.loadjsadm();" pulsarln="2" novaid="182534"
+    class="novaadmin" style="display: none;"></a>
+  <script>
+    (function (w, d, t, r, u) {
+      var f, n, i;
+      (w[u] = w[u] || []),
+      (f = function () {
+        var o = {
+          ti: '26048528'
+        };
+        (o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad');
+      }),
+      (n = d.createElement(t)),
+      (n.src = r),
+      (n.async = 1),
+      (n.onload = n.onreadystatechange = function () {
+        var s = this.readyState;
+        (s && s !== 'loaded' && s !== 'complete') ||
+        (f(), (n.onload = n.onreadystatechange = null));
+      }),
+      (i = d.getElementsByTagName(t)[0]),
+      i.parentNode.insertBefore(n, i);
+    })(window, document, 'script', '../../bat.bing.com/bat.js', 'uetq');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-751484748"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-751484748');
+  </script>
+
+  <script type="text/javascript">
+    nova_post2js = [];
+  </script>
+  <script type="text/javascript">
+    function getbyclass(a) {
+      if (document.getElementsByClassName) {
+        return document.getElementsByClassName(a);
+      } else {
+        var b = [];
+        var c = document.body.getElementsByTagName('*');
+        var d = c.length;
+        for (var e = 0; e < d; e++) {
+          try {
+            var f = c[e].className || c[e].getAttribute('class') || 'no';
+            if (f.indexOf(a) > -1) {
+              b.push(c[e]);
+            }
+          } catch (g) {}
+        }
+        return b;
+      }
+    }
+    var tohide = getbyclass('hideonload');
+    for (var i = 0, l = tohide.length; i < l; i++) {
+      tohide[i].style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
